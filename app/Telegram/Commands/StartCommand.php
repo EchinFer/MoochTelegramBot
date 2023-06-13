@@ -8,6 +8,7 @@ use Longman\TelegramBot\Commands\UserCommand;
 use Longman\TelegramBot\Entities\ServerResponse;
 use Longman\TelegramBot\Exception\TelegramException;
 
+
 class StartCommand extends UserCommand
 {
 
@@ -21,7 +22,7 @@ class StartCommand extends UserCommand
     protected $version = '1.0.0';
 
     public function execute(): ServerResponse
-    {
+    {   
         return $this->replyToChat('Hello world! 👋');
     }
 
