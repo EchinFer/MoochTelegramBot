@@ -1,0 +1,111 @@
+[
+    {
+        "_-updateNewMessage": "updateNewMessage",
+        "message": {
+            "_": "message",
+            "out": true,
+            "mentioned": false,
+            "media_unread": false,
+            "silent": false,
+            "post": false,
+            "from_scheduled": false,
+            "legacy": false,
+            "edit_hide": false,
+            "pinned": false,
+            "noforwards": false,
+            "id": 375,
+            "from_id": {
+                "_": "peerUser",
+                "user_id": 5891705007
+            },
+            "peer_id": {
+                "_": "peerUser",
+                "user_id": 6084274322
+            },
+            "date": 1687463280,
+            "message": "ping",
+            "to_id": {
+                "_": "peerUser",
+                "user_id": 6084274322
+            }
+        },
+        "pts": 667,
+        "pts_count": 1
+    },
+    {
+        "tipo-mensaje": "getInfo-chat",
+        "User": {
+            "_": "user",
+            "flags": 33561695,
+            "self": true,
+            "contact": true,
+            "mutual_contact": true,
+            "deleted": false,
+            "bot": false,
+            "bot_chat_history": false,
+            "bot_nochats": false,
+            "verified": false,
+            "restricted": false,
+            "min": false,
+            "bot_inline_geo": false,
+            "support": false,
+            "scam": false,
+            "apply_min_photo": true,
+            "fake": false,
+            "bot_attach_menu": false,
+            "premium": false,
+            "attach_menu_enabled": false,
+            "flags2": 0,
+            "id": 6084274322,
+            "access_hash": -2772585605453324588,
+            "first_name": "Echin",
+            "last_name": "Fer",
+            "username": "Moochfer",
+            "phone": "595972968728",
+            "status": {
+                "_": "userStatusOnline",
+                "expires": 1687469574
+            }
+        },
+        "InputPeer": {
+            "_": "inputPeerSelf"
+        },
+        "InputUser": {
+            "_": "inputUserSelf"
+        },
+        "Peer": {
+            "_": "peerUser",
+            "user_id": 6084274322
+        },
+        "DialogPeer": {
+            "_": "dialogPeer",
+            "peer": {
+                "_": "peerUser",
+                "user_id": 6084274322
+            }
+        },
+        "NotifyPeer": {
+            "_": "notifyPeer",
+            "peer": {
+                "_": "peerUser",
+                "user_id": 6084274322
+            }
+        },
+        "InputDialogPeer": {
+            "_": "inputDialogPeer",
+            "peer": {
+                "_": "inputPeerSelf"
+            }
+        },
+        "InputNotifyPeer": {
+            "_": "inputNotifyPeer",
+            "peer": {
+                "_": "inputPeerSelf"
+            }
+        },
+        "user_id": 6084274322,
+        "bot_api_id": 6084274322,
+        "type": "user"
+    }
+
+]

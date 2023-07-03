@@ -1,0 +1,430 @@
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2023 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Got exclusive session lock!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Disconnecting all before reconnect!
+DataCenter, Moochfer:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.175.53:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC 1.0
+Session, Moochfer:        	Resetting session in DC 1.0...
+DataCenter, Moochfer:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.41:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC 2.0
+Session, Moochfer:        	Resetting session in DC 2.0...
+DataCenter, Moochfer:     	Reconnecting to DC -2 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.151:443 main DC -2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC -2.0
+Session, Moochfer:        	Resetting session in DC -2.0...
+DataCenter, Moochfer:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC 3.0
+Session, Moochfer:        	Resetting session in DC 3.0...
+DataCenter, Moochfer:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC 4.0
+Session, Moochfer:        	Resetting session in DC 4.0...
+DataCenter, Moochfer:     	Reconnecting to DC -4 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.165.120:443 main DC -4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC -4.0
+Session, Moochfer:        	Resetting session in DC -4.0...
+DataCenter, Moochfer:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://91.108.56.185:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, Moochfer:     	Connecting to DC 5.0
+Session, Moochfer:        	Resetting session in DC 5.0...
+Connection, Moochfer:     	Connected to DC 3.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC 3
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 3
+DataCenter, Moochfer:     	OK!
+PingLoop, Moochfer:       	Ping DC 3.0
+Connection, Moochfer:     	Connected to DC 1.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC 1
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 1
+DataCenter, Moochfer:     	OK!
+PingLoop, Moochfer:       	Ping DC 1.0
+Connection, Moochfer:     	Connected to DC -4.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC -4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -4
+DataCenter, Moochfer:     	OK!
+Connection, Moochfer:     	Connected to DC 2.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC 2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 2
+DataCenter, Moochfer:     	OK!
+PingLoop, Moochfer:       	Ping DC 2.0
+Connection, Moochfer:     	Connected to DC 4.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC 4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 4
+DataCenter, Moochfer:     	OK!
+PingLoop, Moochfer:       	Ping DC 4.0
+Connection, Moochfer:     	Connected to DC -2.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC -2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -2
+DataCenter, Moochfer:     	OK!
+Connection, Moochfer:     	Connected to DC 5.0!
+DataCenterConnection, Moochfer: 	Restoring 0 messages to DC 5
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 5
+DataCenter, Moochfer:     	OK!
+MTProto, Moochfer:        	Initing authorization...
+DataCenterConnection, Moochfer: 	Initing auth for DC 2
+DataCenterConnection, Moochfer: 	Initing auth for DC 1
+DataCenterConnection, Moochfer: 	Initing auth for DC 3
+DataCenterConnection, Moochfer: 	Initing auth for DC 4
+DataCenterConnection, Moochfer: 	Initing auth for DC 5
+DataCenterConnection, Moochfer: 	Initing auth for DC -2
+DataCenterConnection, Moochfer: 	Initing auth for DC -4
+MTProto, Moochfer:        	Done initing authorization!
+MTProto, Moochfer:        	Starting update system
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 1
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 3
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 5
+DataCenter, Moochfer:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.41:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.175.53:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC -2 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.151:443 main DC -2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC -4 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.165.120:443 main DC -4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+DataCenter, Moochfer:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://91.108.56.185:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+DataCenterConnection, Moochfer: 	Already connected!
+DataCenter, Moochfer:     	OK!
+MTProto, Moochfer:        	Initing authorization...
+DataCenterConnection, Moochfer: 	Initing auth for DC 2
+DataCenterConnection, Moochfer: 	Initing auth for DC 1
+DataCenterConnection, Moochfer: 	Initing auth for DC 3
+DataCenterConnection, Moochfer: 	Initing auth for DC 4
+DataCenterConnection, Moochfer: 	Initing auth for DC 5
+DataCenterConnection, Moochfer: 	Initing auth for DC -2
+DataCenterConnection, Moochfer: 	Initing auth for DC -4
+MTProto, Moochfer:        	Done initing authorization!
+MTProto, Moochfer:        	Starting update system
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 1
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 3
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 5
+PingLoop, Moochfer:       	Ping DC 5.0
+PingLoop, Moochfer:       	Ping DC 2.0
+PingLoop, Moochfer:       	Ping DC 1.0
+PingLoop, Moochfer:       	Ping DC 3.0
+PingLoop, Moochfer:       	Ping DC 4.0
+FeedLoop, Moochfer:       	Resumed update feed loop generic
+ResponseHandler, Moochfer: 	Auth key not registered in DC 1 with RPC error AUTH_KEY_UNREGISTERED, resetting temporary and permanent auth keys...
+ResponseHandler, Moochfer: 	Permanent auth key was main authorized key, logging out...
+ResponseHandler, Moochfer: 	!!!!!!! WARNING !!!!!!!
+ResponseHandler, Moochfer: 	Telegram's flood prevention system suspended this account.
+ResponseHandler, Moochfer: 	To continue, manual verification is required.
+ResponseHandler, Moochfer: 	Send an email to recover@telegram.org, asking to unban the phone number +595972968728, and quickly describe what will you do with this phone number.
+ResponseHandler, Moochfer: 	Then login again.
+ResponseHandler, Moochfer: 	If you intentionally deleted this account, ignore this message.
+MTProto, Moochfer:        	AUTH_KEY_UNREGISTERED
+MTProto, Moochfer:        	Starting update system
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 1
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -2
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 3
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC -4
+DataCenterConnection, Moochfer: 	Flushing pending messages, DC 5
+MTProto, Moochfer:        	Getting updates after deserialization...
+APIWrapper, Moochfer:     	MadelineProto is ready!
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\ipcState.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\ipcState.php.lock...
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+APIWrapper, Moochfer:     	Saved session!
+MTProto, Moochfer:        	Initing auth 1
+MTProto, Moochfer:        	Initing auth 1
+ReadLoop, Moochfer:       	Got nothing in the socket in DC 1.0, reconnecting...
+Connection, Moochfer:     	Reconnecting DC 1.0
+Connection, Moochfer:     	Disconnecting from DC 1.0
+Connection, Moochfer:     	Disconnected from DC 1.0
+DataCenter, Moochfer:     	Reconnecting to DC 1 (0) from existing
+DataCenterConnection, Moochfer: 	Trying shared connection via tcp://149.154.175.53:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (0)
+Connection, Moochfer:     	Connecting to DC 1.0
+Session, Moochfer:        	Resetting session in DC 1.0...
+Connection, Moochfer:     	Connected to DC 1.0!
+DataCenter, Moochfer:     	OK!
+Session, Moochfer:        	Garbage collected 7 incoming messages in DC 1, 0 left
+Session, Moochfer:        	Garbage collected 4 outgoing messages in DC 1, 1 left
+GarbageCollector, Moochfer: 	gc_collect_cycles done. Cleaned memory: 1 Mb
+Session, Moochfer:        	Garbage collected 4 incoming messages in DC 3, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 3, 0 left
+Session, Moochfer:        	Garbage collected 4 incoming messages in DC 2, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 2, 0 left
+Session, Moochfer:        	Garbage collected 4 incoming messages in DC 4, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 4, 0 left
+Session, Moochfer:        	Garbage collected 3 incoming messages in DC 5, 0 left
+Session, Moochfer:        	Garbage collected 1 outgoing messages in DC 5, 0 left
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+GarbageCollector, Moochfer: 	gc_collect_cycles done. Cleaned memory: 0 Mb
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 3 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 4 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 5 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 6 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 7 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 8 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 9 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 10 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 11 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 12 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 13 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 14 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 15 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 16 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 17 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 18 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 19 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 20 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Connection, Moochfer:     	Connecting to DC -2.1
+Session, Moochfer:        	Resetting session in DC -2.1...
+Connection, Moochfer:     	Connecting to DC -4.1
+Session, Moochfer:        	Resetting session in DC -4.1...
+Connection, Moochfer:     	Connected to DC -2.1!
+Connection, Moochfer:     	Connecting to DC -2.2
+Session, Moochfer:        	Resetting session in DC -2.2...
+Connection, Moochfer:     	Connected to DC -4.1!
+Connection, Moochfer:     	Connecting to DC -4.2
+Session, Moochfer:        	Resetting session in DC -4.2...
+Connection, Moochfer:     	Connected to DC -2.2!
+Connection, Moochfer:     	Connected to DC -4.2!
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 21 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 22 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 23 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 24 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 25 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 26 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 27 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 28 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 29 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 30 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+APIWrapper, Moochfer:     	Saved session!
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 31 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 32 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 33 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 34 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 35 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 36 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 37 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 38 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 39 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 40 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Connection, Moochfer:     	Connecting to DC -2.3
+Session, Moochfer:        	Resetting session in DC -2.3...
+Connection, Moochfer:     	Connecting to DC -4.3
+Session, Moochfer:        	Resetting session in DC -4.3...
+Connection, Moochfer:     	Connected to DC -4.3!
+Connection, Moochfer:     	Connecting to DC -4.4
+Session, Moochfer:        	Resetting session in DC -4.4...
+Connection, Moochfer:     	Connected to DC -2.3!
+Connection, Moochfer:     	Connecting to DC -2.4
+Session, Moochfer:        	Resetting session in DC -2.4...
+Connection, Moochfer:     	Connected to DC -4.4!
+Connection, Moochfer:     	Connected to DC -2.4!
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 41 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 42 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 43 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 44 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 45 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 46 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 47 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 48 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 49 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 50 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 51 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 52 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 53 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 54 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 55 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 56 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 57 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 58 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 59 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 60 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+PingLoop, Moochfer:       	Ping DC 5.0
+PingLoop, Moochfer:       	Ping DC 2.0
+PingLoop, Moochfer:       	Ping DC 3.0
+PingLoop, Moochfer:       	Ping DC 4.0
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\safe.php.lock...
+SessionPaths, Moochfer:   	Waiting for exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+SessionPaths, Moochfer:   	Got exclusive lock of C:\laragon\www\laravel-telegram-bot\app\Telegram/../../storage/framework/telegramSessions/telefuturo/session.madeline.telefuturo.canal_1\lightState.php.lock...
+APIWrapper, Moochfer:     	Saved session!
+Session, Moochfer:        	Garbage collected 1 incoming messages in DC 3, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 3, 0 left
+Session, Moochfer:        	Garbage collected 1 incoming messages in DC 2, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 2, 0 left
+Session, Moochfer:        	Garbage collected 1 incoming messages in DC 4, 0 left
+Session, Moochfer:        	Garbage collected 2 outgoing messages in DC 4, 0 left
+Session, Moochfer:        	Garbage collected 1 outgoing messages in DC 5, 1 left
+Connection, Moochfer:     	Connecting to DC -4.5
+Session, Moochfer:        	Resetting session in DC -4.5...
+Connection, Moochfer:     	Connecting to DC -2.5
+Session, Moochfer:        	Resetting session in DC -2.5...
+Connection, Moochfer:     	Connected to DC -4.5!
+Connection, Moochfer:     	Connecting to DC -4.6
+Session, Moochfer:        	Resetting session in DC -4.6...
+Connection, Moochfer:     	Connected to DC -2.5!
+Connection, Moochfer:     	Connecting to DC -2.6
+Session, Moochfer:        	Resetting session in DC -2.6...
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 61 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Connection, Moochfer:     	Connected to DC -4.6!
+Connection, Moochfer:     	Connected to DC -2.6!
+Session, Moochfer:        	Garbage collected 1 incoming messages in DC 5, 0 left
+Session, Moochfer:        	Garbage collected 1 outgoing messages in DC 5, 0 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 62 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 63 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 64 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 65 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 66 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 67 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 68 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 69 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 70 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 71 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 72 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 73 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 74 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 75 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 76 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 77 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 78 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 79 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 80 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Connection, Moochfer:     	Connecting to DC -4.7
+Session, Moochfer:        	Resetting session in DC -4.7...
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 81 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Connection, Moochfer:     	Connecting to DC -2.7
+Session, Moochfer:        	Resetting session in DC -2.7...
+Connection, Moochfer:     	Connected to DC -4.7!
+Connection, Moochfer:     	Connecting to DC -4.8
+Session, Moochfer:        	Resetting session in DC -4.8...
+Connection, Moochfer:     	Connected to DC -2.7!
+Connection, Moochfer:     	Connecting to DC -2.8
+Session, Moochfer:        	Resetting session in DC -2.8...
+Connection, Moochfer:     	Connected to DC -4.8!
+Connection, Moochfer:     	Connected to DC -2.8!
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 82 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 83 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 84 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 85 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left
+Session, Moochfer:        	Can't garbage collect updates.getDifference sent 86 seconds ago in DC 1, no response has been received or it wasn't yet handled!
+Session, Moochfer:        	Garbage collected 0 outgoing messages in DC 1, 1 left

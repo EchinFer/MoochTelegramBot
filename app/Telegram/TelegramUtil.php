@@ -8,22 +8,28 @@ use danog\MadelineProto\Settings\Connection;
 use danog\MadelineProto\Settings\Database\Mysql;
 use danog\MadelineProto\Settings\Logger;
 use Exception;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class TelegramUtil
 {
-    public static function formatearNombreSesion($cliente, $canalId) : string {
-        $nombreSesion = "session.madeline.$cliente.$canalId";
+
+    public static function obtenerNombreSesion($cliente, $canalId, $fullPath = null): string
+    {
+        $fullPath_ = self::obtenerRutaSesion($cliente, $fullPath);
+        $nombreSesion = $fullPath_."/session.madeline.$cliente.$canalId";
         return $nombreSesion;
     }
 
-    public static function obtenerApiInfo($cliente) {
+    public static function obtenerApiInfo($cliente)
+    {
         $appInfoClientes = [
             "telefuturo" => [
-                "canal-1" => [
+                "canal_1" => [
                     "api_id" => 20585216,
                     "api_hash" => "488684162b7185ba741f42afa417b034"
                 ],
-                "canal-2" => [
+                "canal_2" => [
                     "api_id" => 20585216,
                     "api_hash" => "488684162b7185ba741f42afa417b034"
                 ]
@@ -39,18 +45,18 @@ class TelegramUtil
 
         $settings = new Settings();
         $apiInfo = self::obtenerApiInfo($cliente);
-        if($apiInfo == null){
+        if ($apiInfo == null) {
             throw new Exception("El cliente '$cliente' no tiene configurado la informacion de la app en Telegram");
             return null;
         }
-        if(!isset($apiInfo[$canalId])){
+        if (!isset($apiInfo[$canalId])) {
             throw new Exception("El canal '$canalId' no tiene configurado la informacion de la app en Telegram");
             return null;
         }
-        
-        
+
         $apiId = (int)$apiInfo[$canalId]["api_id"];
         $apiHash = (string)$apiInfo[$canalId]["api_hash"];
+
         $appinfoSetting = new AppInfo;
         $appinfoSetting = $appinfoSetting->setApiId($apiId);
         $appinfoSetting = $appinfoSetting->setApiHash($apiHash);
@@ -62,18 +68,33 @@ class TelegramUtil
         $connectionSetting = $connectionSetting->setTestMode(true);
 
         $databaseSetting = new Mysql;
-        $databaseSetting = $databaseSetting->setUri(env("DB_HOST"));
-        $databaseSetting = $databaseSetting->setDatabase($cliente);
-        $databaseSetting = $databaseSetting->setUsername(env("DB_USERNAME"));
-        $databaseSetting = $databaseSetting->setPassword(env("DB_PASSWORD"));
+        // $databaseSetting = $databaseSetting->setUri(env("DB_HOST"));
+        // $databaseSetting = $databaseSetting->setDatabase($cliente);
+        // $databaseSetting = $databaseSetting->setUsername(env("DB_USERNAME"));
+        // $databaseSetting = $databaseSetting->setPassword(env("DB_PASSWORD"));
 
 
         $settings->setAppInfo($appinfoSetting);
-        $settings->setConnection($connectionSetting);
+        // $settings->setConnection($connectionSetting);
         // $settings->setDb($databaseSetting);
         // $settings->setLogger($loggerSetting);
-        
+
 
         return $settings;
     }
+
+
+    public static function obtenerRutaSesion($cliente, $fullPath = null){
+        $fullPath_ = $fullPath == null ? storage_path('framework/telegramSessions') : $fullPath;
+        if(file_exists($fullPath_) == false){
+            mkdir($fullPath_, 0777);
+        }
+        $fullPath_ = $fullPath == null ? storage_path('framework/telegramSessions/'.$cliente) : $fullPath."/".$cliente;
+        if(file_exists($fullPath_) == false){
+            mkdir($fullPath_, 0777);
+        }
+        
+        return $fullPath_;
+    }
+
 }

@@ -56,18 +56,51 @@ class AuthTelegramController extends Controller
         }
     }
 
-    public function phoneLogin(Request $request)
-    {
+    public function iniciarSesion(Request $request){
+        $cliente = "telefuturo";
+        $canalId = "canal_1";
+        $settings = TelegramUtil::obtenerConfiguracionInicial($cliente, $canalId);
+        $nombreSesion = TelegramUtil::obtenerNombreSesion($cliente, $canalId);
+        
+        $jsonResponse = response()->json([
+            "status" => "fail",
+            "telegram_response" => "-"
+        ]);
+       
+        try {
+            $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
+            // $madelineProto->start();
+            // $jsonResponse = response()->json([
+            //     "status" => "success",
+            //     "telegram_response" => ""
+            // ]);
+        } catch (\Throwable $th) {
+            // var_dump($th->getMessage());
+            // $jsonResponse = response()->json([
+            //     "status" => "fail",
+            //     "message" => $th->getMessage()
+            // ]);
+            var_dump($th->getMessage());
+        }
+
+        // return $jsonResponse;
+    }
+
+    public function iniciarSesionTelefono(Request $request)
+    {   
         $cliente = $request->cliente;
         $canalId = $request->canalId;
         $numeroTelefono = $request->numeroTelefono;
-
         $settings = TelegramUtil::obtenerConfiguracionInicial($cliente, $canalId);
-        $nombreSesion = TelegramUtil::formatearNombreSesion($cliente, $canalId);
-        $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
-
-        $jsonResponse = null;
+        $nombreSesion = TelegramUtil::obtenerNombreSesion($cliente, $canalId);
+        
+        $jsonResponse = response()->json([
+            "status" => "fail",
+            "telegram_response" => "-"
+        ]);
+        
         try {
+            $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
             $response = $madelineProto->phoneLogin($numeroTelefono);
             $jsonResponse = response()->json([
                 "status" => "success",
@@ -84,18 +117,18 @@ class AuthTelegramController extends Controller
         return $jsonResponse;
     }
 
-    public function completePhoneLogin(Request $request)
+    public function completarIniciarSesionTelefono(Request $request)
     {
         $cliente = $request->cliente;
         $canalId = $request->canalId;
         $codigoVerificacion = $request->codigoVerificacion;
 
         $settings = TelegramUtil::obtenerConfiguracionInicial($cliente, $canalId);
-        $nombreSesion = TelegramUtil::formatearNombreSesion($cliente, $canalId);
-        $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
-
+        $nombreSesion = TelegramUtil::obtenerNombreSesion($cliente, $canalId);
+        
         $jsonResponse = null;
         try {
+            $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
             $authorization = $madelineProto->completePhoneLogin($codigoVerificacion);
 
             $jsonResponse = response()->json([
@@ -116,18 +149,18 @@ class AuthTelegramController extends Controller
         return $jsonResponse;
     }
 
-    public function passwordPhoneLogin(Request $request)
+    public function completar2faSesion(Request $request)
     {
         $cliente = $request->cliente;
         $canalId = $request->canalId;
         $passwordTelefono = $request->passwordTelefono;
 
         $settings = TelegramUtil::obtenerConfiguracionInicial($cliente, $canalId);
-        $nombreSesion = TelegramUtil::formatearNombreSesion($cliente, $canalId);
-        $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
-
+        $nombreSesion = TelegramUtil::obtenerNombreSesion($cliente, $canalId);
+        
         $jsonResponse = null;
         try {
+            $madelineProto = new \danog\MadelineProto\API($nombreSesion, $settings);
             $authorization = $madelineProto->complete2falogin($passwordTelefono);
 
             $jsonResponse = response()->json([

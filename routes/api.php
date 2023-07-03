@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\Telegram\AuthTelegramController;
+use App\Http\Controllers\Api\Telegram\TelegramController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
@@ -198,3 +200,23 @@ Route::post('sendMessage', function (Request $request) {
 });
 
 
+
+
+
+Route::prefix('telegram')->group(function() {
+
+    //AUTHENTICATION
+    Route::post('/iniciarSesion', [AuthTelegramController::class, "iniciarSesion"]);
+    Route::post('/iniciarSesionTelefono', [AuthTelegramController::class, "iniciarSesionTelefono"]);
+    Route::post('/completarIniciarSesionTelefono', [AuthTelegramController::class, "completarIniciarSesionTelefono"]);
+    Route::post('/completar2faSesion', [AuthTelegramController::class, "completar2faSesion"]);
+
+    //START HANDLER EVENT
+    Route::post('/iniciarManejadorEventosMtpro', [TelegramController::class, "iniciarManejadorEventosMtpro"]);
+
+
+    //COMMONS
+    Route::get('/obtenerContactos', [TelegramController::class, "obtenerContactos"]);
+    Route::post('/enviarMensaje', [TelegramController::class, "enviarMensaje"]);
+
+});

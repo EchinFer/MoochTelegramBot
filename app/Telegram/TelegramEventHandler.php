@@ -10,6 +10,7 @@ if (file_exists('../../vendor/autoload.php')) {
     require_once '../../vendor/autoload.php';
 }
 
+use App\Http\Controllers\Api\Telegram\TelegramController;
 use danog\MadelineProto\API;
 use danog\MadelineProto\Db\DbArray;
 use danog\MadelineProto\EventHandler;
@@ -18,6 +19,7 @@ use danog\MadelineProto\Settings\AppInfo;
 use danog\MadelineProto\Settings\Connection;
 use danog\MadelineProto\Settings\Logger as SettingsLogger;
 use danog\MadelineProto\Settings\Templates;
+use Illuminate\Http\Request;
 use Illuminate\Log\Logger;
 
 class TelegramEventHandler extends EventHandler
@@ -123,7 +125,13 @@ class TelegramEventHandler extends EventHandler
                 $this->messages->sendMessage(['message' => 'Reiniciar Event Handler', 'peer' => $update]);
                 $this->restart();
             }
+
+            if ($message === 'get-chat-id') {
+                $chatFullInfo = $this->getInfo($id);
+                $this->logger(["log-chatFullInfo" => $chatFullInfo]);
+            }
         }
+        
         if ($message === 'ping') {
             $this->messages->sendMessage(['message' => 'pong', 'peer' => $update]);
         }
@@ -161,41 +169,28 @@ class TelegramEventHandler extends EventHandler
             }
         }
     }
+
+    public function onAny($update): void
+    {
+        $this->logger(["log-onAny" => $update]);
+    }
 }
 
-$settings = new Settings();
-        
-$appinfo = new AppInfo;
-$appinfo = $appinfo->setApiId('20585216');
-$appinfo = $appinfo->setApiHash('488684162b7185ba741f42afa417b034');
+// $MadelineProto->phoneLogin($MadelineProto->readline('Enter your phone number: '));
+// $authorization = $MadelineProto->completePhoneLogin($MadelineProto->readline('Enter the phone code: '));
+// if ($authorization['_'] === 'account.password') {
+//     $authorization = $MadelineProto->complete2falogin($MadelineProto->readline('Please enter your password (hint '.$authorization['hint'].'): '));
+// }
+// if ($authorization['_'] === 'account.needSignup') {
+//     $authorization = $MadelineProto->completeSignup($MadelineProto->readline('Please enter your first name: '), readline('Please enter your last name (can be empty): '));
+// }
 
-$templateSetting = new Templates;
-$templateSetting = $templateSetting->setHtmlTemplate('
-    <!DOCTYPE html>
-    <html>
-            <head>
-                <title>MadelineProto Test</title>
-            </head>
-            <body>
-                <h1>MadelineProto Test</h1>
-                <form method="POST" action="/madeline_proto/home">
-                    %s
-                    <button type="submit"/>Comenzar</button>
-                    </form>
-                    <p>%s</p>
-            </body>
-    </html>
-');       
+// return;
 
-$loggerSetting = new SettingsLogger;
-$loggerSetting = $loggerSetting->setExtra("logMadeline/madeline.log");
 
-$connectionSetting = new Connection;
-$connectionSetting = $connectionSetting->setTestMode(true);
+$fullPathSessions = __DIR__."/../../storage/framework/telegramSessions";
+$telegramController = new TelegramController();
 
-$settings->setAppInfo($appinfo);
-$settings->setTemplates($templateSetting);
-// $settings->setLogger($loggerSetting);
+$telegramController->iniciarSesion("telefuturo", "canal_1", $fullPathSessions);
 
-$madeline = new API("session.madeline.user2", $settings);
-TelegramEventHandler::startAndLoop('session.madeline.user2', $settings);
+// echo $telegramController->iniciarManejadorEventosMtpro($fullPathSessions);
